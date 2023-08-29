@@ -1,11 +1,20 @@
+import React, { useState } from "react";
 
-import{ Box } from "./components/Box"
-function App() {
+import { Board } from "./components/Board";
+
+import './App.css';
+
+const App = () => {
+
+  const board = ["X","X","X","X","X","X","X","X","X"]
+
   return (
     <div className="App">
-    <Box value="X" onClick={null}/>
-  </div>
-);
+      <Board board={board} onClick={null} />
+      
+    </div>
+  );
 }
 
 export default App;
+
